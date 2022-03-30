@@ -4,11 +4,19 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.WinXCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.WinXCtrls,
+  Vcl.Imaging.pngimage, RzPanel;
 
 type
-  TForm2 = class(TForm)
+  TFrmMain = class(TForm)
     spltvw1: TSplitView;
+    rzPnlTop: TRzPanel;
+    rzPnlTopSplit: TRzPanel;
+    img1: TImage;
+    imgConnect: TImage;
+    imgDisconnect: TImage;
+    imgRemove: TImage;
+    imgSettings: TImage;
   private
     { Private declarations }
   public
@@ -16,7 +24,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  FrmMain: TFrmMain;
 
 implementation
 
