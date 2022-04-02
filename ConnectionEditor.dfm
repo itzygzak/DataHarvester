@@ -3,7 +3,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
   Top = 0
   Caption = 'FrmConnectionEditor'
   ClientHeight = 486
-  ClientWidth = 398
+  ClientWidth = 422
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,7 +16,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
   object rzGrpBx1: TRzGroupBox
     Left = 8
     Top = 64
-    Width = 185
+    Width = 382
     Caption = 'Server'
     TabOrder = 0
   end
@@ -24,29 +24,29 @@ object FrmConnectionEditor: TFrmConnectionEditor
     Left = 8
     Top = 175
     Width = 382
-    Height = 234
+    Height = 250
     Caption = 'Parametry po'#322#261'czenia '
     TabOrder = 1
     object rzLbl1: TRzLabel
-      Left = 24
-      Top = 32
-      Width = 28
+      Left = 8
+      Top = 24
+      Width = 54
       Height = 13
-      Caption = 'rzLbl1'
+      Caption = 'U'#380'ytkownik'
     end
     object rzLbl2: TRzLabel
-      Left = 24
-      Top = 64
-      Width = 28
+      Left = 8
+      Top = 51
+      Width = 27
       Height = 13
-      Caption = 'rzLbl2'
+      Caption = 'Has'#322'o'
     end
     object rzLbl3: TRzLabel
-      Left = 24
+      Left = 8
       Top = 88
-      Width = 28
+      Width = 21
       Height = 13
-      Caption = 'rzLbl3'
+      Caption = 'Role'
     end
     object rzLbl4: TRzLabel
       Left = 200
@@ -71,7 +71,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
     end
     object mmo1: TMemo
       Left = 8
-      Top = 136
+      Top = 144
       Width = 185
       Height = 89
       Lines.Strings = (
@@ -79,24 +79,24 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 0
     end
     object edtUser: TEdit
-      Left = 64
-      Top = 32
+      Left = 68
+      Top = 21
       Width = 121
       Height = 21
       TabOrder = 1
       Text = 'edtUser'
     end
     object edtPassword: TEdit
-      Left = 72
-      Top = 64
+      Left = 68
+      Top = 48
       Width = 121
       Height = 21
       TabOrder = 2
       Text = 'edtPassword'
     end
     object edtRole: TEdit
-      Left = 72
-      Top = 96
+      Left = 65
+      Top = 75
       Width = 121
       Height = 21
       TabOrder = 3
