@@ -17,6 +17,7 @@ type
     imgDisconnect: TImage;
     imgRemove: TImage;
     imgSettings: TImage;
+    procedure img1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,7 +28,15 @@ var
   FrmMain: TFrmMain;
 
 implementation
+uses ConnectionEditor;
 
 {$R *.dfm}
+
+procedure TFrmMain.img1Click(Sender: TObject);
+begin
+FrmConnectionEditor.Top := FrmMain.Top + 50;
+FrmConnectionEditor.Left := FrmMain.Left + 50;
+FrmConnectionEditor.ShowModal;
+end;
 
 end.

@@ -16,7 +16,7 @@ object FrmMain: TFrmMain
   object spltvw1: TSplitView
     Left = 0
     Top = 41
-    Width = 209
+    Width = 200
     Height = 505
     OpenedWidth = 200
     Placement = svpLeft
@@ -24,7 +24,7 @@ object FrmMain: TFrmMain
     object rzPnlTopSplit: TRzPanel
       Left = 0
       Top = 0
-      Width = 209
+      Width = 200
       Height = 41
       Align = alTop
       BorderInner = fsGroove
@@ -66,6 +66,7 @@ object FrmMain: TFrmMain
           01C8F4B1A9BC433E093B325DCEBCAC05EE8D542D535C46AEF97CBEDA191D4A63
           57CA8EE53244FE7E981060057A49E496F82819A7320FA9CA1DD53F4CFEE79A23
           F01B2FB8C4302280AAB70000000049454E44AE426082}
+        OnClick = img1Click
       end
       object imgConnect: TImage
         Left = 34
@@ -183,7 +184,7 @@ object FrmMain: TFrmMain
           015D9AA430A4C4E2A30000000049454E44AE426082}
       end
       object imgSettings: TImage
-        Left = 175
+        Left = 166
         Top = 2
         Width = 32
         Height = 37
@@ -236,8 +237,5 @@ object FrmMain: TFrmMain
     BorderInner = fsFlat
     BorderOuter = fsFlat
     TabOrder = 1
-    ExplicitLeft = 488
-    ExplicitTop = 104
-    ExplicitWidth = 185
   end
 end
