@@ -29,91 +29,86 @@ object FrmConnectionEditor: TFrmConnectionEditor
     TabOrder = 1
     object rzLbl1: TRzLabel
       Left = 8
-      Top = 24
+      Top = 29
       Width = 54
       Height = 13
       Caption = 'U'#380'ytkownik'
     end
     object rzLbl2: TRzLabel
       Left = 8
-      Top = 51
+      Top = 56
       Width = 27
       Height = 13
       Caption = 'Has'#322'o'
     end
     object rzLbl3: TRzLabel
       Left = 8
-      Top = 88
+      Top = 83
       Width = 21
       Height = 13
       Caption = 'Role'
     end
     object rzLbl4: TRzLabel
       Left = 200
-      Top = 32
-      Width = 28
+      Top = 29
+      Width = 32
       Height = 13
-      Caption = 'rzLbl4'
+      Caption = 'Strona'
     end
     object rzLbl5: TRzLabel
       Left = 200
-      Top = 64
-      Width = 28
+      Top = 56
+      Width = 54
       Height = 13
-      Caption = 'rzLbl5'
+      Caption = 'SQL Dialekt'
     end
     object rzLbl6: TRzLabel
-      Left = 192
-      Top = 96
-      Width = 28
+      Left = 8
+      Top = 125
+      Width = 161
       Height = 13
-      Caption = 'rzLbl6'
+      Caption = 'Dodatkowe parametry po'#322#261'czenia'
     end
     object mmo1: TMemo
       Left = 8
       Top = 144
-      Width = 185
+      Width = 361
       Height = 89
-      Lines.Strings = (
-        'mmo1')
       TabOrder = 0
     end
     object edtUser: TEdit
       Left = 68
-      Top = 21
+      Top = 26
       Width = 121
       Height = 21
       TabOrder = 1
-      Text = 'edtUser'
     end
     object edtPassword: TEdit
       Left = 68
-      Top = 48
+      Top = 52
       Width = 121
       Height = 21
       TabOrder = 2
-      Text = 'edtPassword'
     end
     object edtRole: TEdit
-      Left = 65
-      Top = 75
+      Left = 68
+      Top = 78
       Width = 121
       Height = 21
       TabOrder = 3
-      Text = 'edtRole'
     end
     object cbbCharset: TComboBox
-      Left = 240
-      Top = 32
-      Width = 145
+      Left = 264
+      Top = 26
+      Width = 105
       Height = 21
       TabOrder = 4
       Text = 'cbbCharset'
     end
     object cbbDialect: TComboBox
-      Left = 240
-      Top = 64
-      Width = 145
+      Left = 264
+      Top = 52
+      Width = 105
       Height = 21
       TabOrder = 5
       Text = 'cbbDialect'

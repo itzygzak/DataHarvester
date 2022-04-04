@@ -15,12 +15,14 @@ object FrmMain: TFrmMain
   TextHeight = 13
   object spltvw1: TSplitView
     Left = 0
-    Top = 41
+    Top = 49
     Width = 200
-    Height = 505
+    Height = 497
     OpenedWidth = 200
     Placement = svpLeft
     TabOrder = 0
+    ExplicitTop = 41
+    ExplicitHeight = 505
     object rzPnlTopSplit: TRzPanel
       Left = 0
       Top = 0
@@ -232,7 +234,7 @@ object FrmMain: TFrmMain
     Left = 0
     Top = 0
     Width = 1119
-    Height = 41
+    Height = 49
     Align = alTop
     BorderInner = fsFlat
     BorderOuter = fsFlat
