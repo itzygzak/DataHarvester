@@ -3,7 +3,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
   Top = 0
   Caption = 'FrmConnectionEditor'
   ClientHeight = 486
-  ClientWidth = 422
+  ClientWidth = 399
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

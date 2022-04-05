@@ -10,6 +10,7 @@ object FrmMain: TFrmMain
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = mm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
@@ -21,8 +22,6 @@ object FrmMain: TFrmMain
     OpenedWidth = 200
     Placement = svpLeft
     TabOrder = 0
-    ExplicitTop = 41
-    ExplicitHeight = 505
     object rzPnlTopSplit: TRzPanel
       Left = 0
       Top = 0
@@ -239,5 +238,25 @@ object FrmMain: TFrmMain
     BorderInner = fsFlat
     BorderOuter = fsFlat
     TabOrder = 1
+    ExplicitTop = -4
+  end
+  object mm1: TMainMenu
+    Left = 320
+    Top = 176
+    object Plik1: TMenuItem
+      Caption = 'Plik'
+    end
+    object Narzdzia1: TMenuItem
+      Caption = 'Narz'#281'dzia'
+    end
+    object Ustawienia1: TMenuItem
+      Caption = 'Ustawienia'
+    end
+    object Pomoc1: TMenuItem
+      Caption = 'Pomoc'
+      object Oprogramie1: TMenuItem
+        Caption = 'O programie'
+      end
+    end
   end
 end

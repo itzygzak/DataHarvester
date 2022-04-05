@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.WinXCtrls,
-  Vcl.Imaging.pngimage, RzPanel;
+  Vcl.Imaging.pngimage, RzPanel, Vcl.Menus;
 
 type
   TFrmMain = class(TForm)
@@ -17,6 +17,12 @@ type
     imgDisconnect: TImage;
     imgRemove: TImage;
     imgSettings: TImage;
+    mm1: TMainMenu;
+    Plik1: TMenuItem;
+    Narzdzia1: TMenuItem;
+    Ustawienia1: TMenuItem;
+    Pomoc1: TMenuItem;
+    Oprogramie1: TMenuItem;
     procedure img1Click(Sender: TObject);
   private
     { Private declarations }
