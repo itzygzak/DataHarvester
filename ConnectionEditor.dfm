@@ -1,7 +1,7 @@
 object FrmConnectionEditor: TFrmConnectionEditor
   Left = 0
   Top = 0
-  Caption = 'FrmConnectionEditor'
+  Caption = 'Connection Editor'
   ClientHeight = 486
   ClientWidth = 399
   Color = clBtnFace
@@ -15,10 +15,40 @@ object FrmConnectionEditor: TFrmConnectionEditor
   TextHeight = 13
   object rzGrpBx1: TRzGroupBox
     Left = 8
-    Top = 64
+    Top = 8
     Width = 382
+    Height = 161
     Caption = 'Server'
     TabOrder = 0
+    object rzLbl7: TRzLabel
+      Left = 16
+      Top = 24
+      Width = 86
+      Height = 13
+      Caption = 'Nazwa po'#322#261'czenia'
+    end
+    object rzRdGrp1: TRzRadioGroup
+      Left = 8
+      Top = 80
+      Width = 345
+      Height = 65
+      Caption = 'Rodzaj po'#322#261'czenie'
+      Columns = 2
+      Items.Strings = (
+        'Po'#322#261'czenie lokalne'
+        'Po'#322#261'czenie TCP\IP')
+      SpaceEvenly = True
+      StartYPos = 12
+      TabOrder = 0
+    end
+    object edtNazwaPol: TEdit
+      Left = 8
+      Top = 43
+      Width = 233
+      Height = 21
+      TabOrder = 1
+      TextHint = 'Wprowad'#378' nazw'#281' po'#322#261'czenia'
+    end
   end
   object rzGrpBx2: TRzGroupBox
     Left = 8
@@ -113,5 +143,19 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 5
       Text = 'cbbDialect'
     end
+  end
+  object btnConnect: TButton
+    Left = 232
+    Top = 431
+    Width = 75
+    Height = 25
+    Caption = 'btnConnect'
+    TabOrder = 2
+    OnClick = btnConnectClick
+  end
+  object ibDtBs1: TIBDatabase
+    ServerType = 'IBServer'
+    Left = 288
+    Top = 24
   end
 end

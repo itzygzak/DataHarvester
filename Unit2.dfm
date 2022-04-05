@@ -68,6 +68,8 @@ object FrmMain: TFrmMain
           57CA8EE53244FE7E981060057A49E496F82819A7320FA9CA1DD53F4CFEE79A23
           F01B2FB8C4302280AAB70000000049454E44AE426082}
         OnClick = img1Click
+        ExplicitLeft = -4
+        ExplicitTop = 6
       end
       object imgConnect: TImage
         Left = 34
@@ -227,6 +229,13 @@ object FrmMain: TFrmMain
         ExplicitTop = 24
         ExplicitHeight = 32
       end
+    end
+    object rzMmo1: TRzMemo
+      Left = 2
+      Top = 47
+      Width = 191
+      Height = 218
+      TabOrder = 1
     end
   end
   object rzPnlTop: TRzPanel
