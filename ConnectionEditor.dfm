@@ -154,8 +154,14 @@ object FrmConnectionEditor: TFrmConnectionEditor
     OnClick = btnConnectClick
   end
   object ibDtBs1: TIBDatabase
+    DatabaseName = '@'
+    LoginPrompt = False
     ServerType = 'IBServer'
     Left = 288
     Top = 24
+  end
+  object ibDtbsNf1: TIBDatabaseInfo
+    Left = 336
+    Top = 32
   end
 end
