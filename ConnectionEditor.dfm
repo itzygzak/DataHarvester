@@ -49,6 +49,14 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 1
       TextHint = 'Wprowad'#378' nazw'#281' po'#322#261'czenia'
     end
+    object edtParametry: TEdit
+      Left = 48
+      Top = 140
+      Width = 337
+      Height = 21
+      TabOrder = 2
+      Text = '127.0.0.1:3050:/d:\Bazy\Dziennik2021\dziennik2021.fdb'
+    end
   end
   object rzGrpBx2: TRzGroupBox
     Left = 8
@@ -108,10 +116,11 @@ object FrmConnectionEditor: TFrmConnectionEditor
     end
     object edtUser: TEdit
       Left = 68
-      Top = 26
+      Top = 25
       Width = 121
       Height = 21
       TabOrder = 1
+      OnChange = edtUserChange
     end
     object edtPassword: TEdit
       Left = 68
@@ -143,6 +152,15 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 5
       Text = 'cbbDialect'
     end
+    object btn2: TButton
+      Left = 208
+      Top = 104
+      Width = 75
+      Height = 25
+      Caption = 'btn2'
+      TabOrder = 6
+      OnClick = btn2Click
+    end
   end
   object btnConnect: TButton
     Left = 232
@@ -152,6 +170,15 @@ object FrmConnectionEditor: TFrmConnectionEditor
     Caption = 'btnConnect'
     TabOrder = 2
     OnClick = btnConnectClick
+  end
+  object btn1: TButton
+    Left = 56
+    Top = 431
+    Width = 75
+    Height = 25
+    Caption = 'btn1'
+    TabOrder = 3
+    OnClick = btn1Click
   end
   object ibDtBs1: TIBDatabase
     DatabaseName = '@'
