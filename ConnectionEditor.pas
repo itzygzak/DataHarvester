@@ -30,7 +30,9 @@ type
     btnConnect: TButton;
     ibDtbsNf1: TIBDatabaseInfo;
     btn1: TButton;
-    edtParametry: TEdit;
+    edtIP: TEdit;
+    edtPort: TEdit;
+    edtSciezka: TEdit;
     btn2: TButton;
     procedure btnConnectClick(Sender: TObject);
     procedure btn1Click(Sender: TObject);
@@ -52,15 +54,14 @@ implementation
 procedure TFrmConnectionEditor.btn1Click(Sender: TObject);
 begin
 if ibDtBs1.Connected then ibDtBs1.Close;
- ibDtBs1.DatabaseName:= EdtParametry.text;
+ ibDtBs1.DatabaseName:= mmo1.Text;
  ibDtBs1.Open;
 end;
 
 procedure TFrmConnectionEditor.btn2Click(Sender: TObject);
 begin
-    if ibDtBs1.Connected then ibDtBs1.Close;
- ibDtBs1.DatabaseName:= EdtParametry.text;
- ibDtBs1.Open;
+mmo1.Lines.Add(edtIP.Text +'/' + edtPort.Text +':' +edtSciezka.Text);
+//(edtUser.Text +' '+ edtPassword.Text);
 end;
 
 procedure TFrmConnectionEditor.btnConnectClick(Sender: TObject);
@@ -91,7 +92,7 @@ end;
 
 procedure TFrmConnectionEditor.edtUserChange(Sender: TObject);
 begin
-edtParametry.Text:= edtUser.Text + edtPassword.Text;
+//edtParametry.Text:= edtUser.Text + edtPassword.Text;
 end;
 
 end.

@@ -2,7 +2,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
   Left = 0
   Top = 0
   Caption = 'Connection Editor'
-  ClientHeight = 486
+  ClientHeight = 598
   ClientWidth = 399
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -17,7 +17,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
     Left = 8
     Top = 8
     Width = 382
-    Height = 161
+    Height = 281
     Caption = 'Server'
     TabOrder = 0
     object rzLbl7: TRzLabel
@@ -29,9 +29,9 @@ object FrmConnectionEditor: TFrmConnectionEditor
     end
     object rzRdGrp1: TRzRadioGroup
       Left = 8
-      Top = 80
+      Top = 70
       Width = 345
-      Height = 65
+      Height = 49
       Caption = 'Rodzaj po'#322#261'czenie'
       Columns = 2
       Items.Strings = (
@@ -49,20 +49,36 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 1
       TextHint = 'Wprowad'#378' nazw'#281' po'#322#261'czenia'
     end
-    object edtParametry: TEdit
-      Left = 48
-      Top = 140
-      Width = 337
+    object edtIP: TEdit
+      Left = 8
+      Top = 160
+      Width = 121
       Height = 21
       TabOrder = 2
-      Text = '127.0.0.1:3050:/d:\Bazy\Dziennik2021\dziennik2021.fdb'
+      Text = 'edtIP'
+    end
+    object edtPort: TEdit
+      Left = 152
+      Top = 160
+      Width = 121
+      Height = 21
+      TabOrder = 3
+      Text = 'edtPort'
+    end
+    object edtSciezka: TEdit
+      Left = 8
+      Top = 208
+      Width = 275
+      Height = 21
+      TabOrder = 4
+      Text = 'edtSciezka'
     end
   end
   object rzGrpBx2: TRzGroupBox
     Left = 8
-    Top = 175
+    Top = 304
     Width = 382
-    Height = 250
+    Height = 239
     Caption = 'Parametry po'#322#261'czenia '
     TabOrder = 1
     object rzLbl1: TRzLabel
@@ -152,19 +168,10 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 5
       Text = 'cbbDialect'
     end
-    object btn2: TButton
-      Left = 208
-      Top = 104
-      Width = 75
-      Height = 25
-      Caption = 'btn2'
-      TabOrder = 6
-      OnClick = btn2Click
-    end
   end
   object btnConnect: TButton
-    Left = 232
-    Top = 431
+    Left = 122
+    Top = 549
     Width = 75
     Height = 25
     Caption = 'btnConnect'
@@ -172,13 +179,22 @@ object FrmConnectionEditor: TFrmConnectionEditor
     OnClick = btnConnectClick
   end
   object btn1: TButton
-    Left = 56
-    Top = 431
+    Left = 35
+    Top = 549
     Width = 75
     Height = 25
     Caption = 'btn1'
     TabOrder = 3
     OnClick = btn1Click
+  end
+  object btn2: TButton
+    Left = 208
+    Top = 549
+    Width = 121
+    Height = 25
+    Caption = 'btn2'
+    TabOrder = 4
+    OnClick = btn2Click
   end
   object ibDtBs1: TIBDatabase
     DatabaseName = '@'
