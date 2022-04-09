@@ -27,6 +27,12 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Height = 13
       Caption = 'Nazwa po'#322#261'czenia'
     end
+    object shp1: TShape
+      Left = 296
+      Top = 144
+      Width = 65
+      Height = 65
+    end
     object rzRdGrp1: TRzRadioGroup
       Left = 8
       Top = 70
@@ -55,7 +61,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Width = 121
       Height = 21
       TabOrder = 2
-      Text = 'edtIP'
+      Text = '127.0.0.1'
     end
     object edtPort: TEdit
       Left = 152
@@ -63,7 +69,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Width = 121
       Height = 21
       TabOrder = 3
-      Text = 'edtPort'
+      Text = '3050'
     end
     object edtSciezka: TEdit
       Left = 8
@@ -71,7 +77,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Width = 275
       Height = 21
       TabOrder = 4
-      Text = 'edtSciezka'
+      Text = 'D:\Bazy\Dziennik2021\dziennik2021.fdb'
     end
   end
   object rzGrpBx2: TRzGroupBox
@@ -126,7 +132,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
     object mmo1: TMemo
       Left = 8
       Top = 144
-      Width = 361
+      Width = 313
       Height = 89
       TabOrder = 0
     end
@@ -136,6 +142,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Width = 121
       Height = 21
       TabOrder = 1
+      Text = 'SYSDBA'
       OnChange = edtUserChange
     end
     object edtPassword: TEdit
@@ -144,6 +151,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Width = 121
       Height = 21
       TabOrder = 2
+      Text = 'masterkey'
     end
     object edtRole: TEdit
       Left = 68
@@ -168,9 +176,17 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 5
       Text = 'cbbDialect'
     end
+    object tv1: TTreeView
+      Left = 232
+      Top = 104
+      Width = 121
+      Height = 97
+      Indent = 19
+      TabOrder = 6
+    end
   end
   object btnConnect: TButton
-    Left = 122
+    Left = 127
     Top = 549
     Width = 75
     Height = 25
@@ -200,6 +216,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
     DatabaseName = '@'
     LoginPrompt = False
     ServerType = 'IBServer'
+    AfterConnect = ibDtBs1AfterConnect
     Left = 288
     Top = 24
   end

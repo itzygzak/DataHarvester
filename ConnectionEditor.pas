@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RzLabel, Vcl.ExtCtrls,
-  RzPanel, RzRadGrp, Data.DB, IBX.IBDatabase, IBX.IBDatabaseInfo;
+  RzPanel, RzRadGrp, Data.DB, IBX.IBDatabase, IBX.IBDatabaseInfo, Vcl.ComCtrls;
 
 type
   TFrmConnectionEditor = class(TForm)
@@ -34,10 +34,13 @@ type
     edtPort: TEdit;
     edtSciezka: TEdit;
     btn2: TButton;
+    tv1: TTreeView;
+    shp1: TShape;
     procedure btnConnectClick(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure edtUserChange(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure ibDtBs1AfterConnect(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,33 +69,24 @@ end;
 
 procedure TFrmConnectionEditor.btnConnectClick(Sender: TObject);
 begin
-{ibDtBs1.DatabaseName:='';
-ibDtBs1.CharacterSet:='';
-ibDtBs1.TestConnected:='';
-ibDtBs1.Connected:= True;
-ibDtBs1.Params.s  }
-
-
 ibDtBs1.Close;
-
 ibDtBs1.Params.Clear;
-
 ibDtBs1.Connected;
-ibDtBs1.DatabaseName := '127.0.0.1/3050:D:\Bazy\Dziennik2021\DZIENNIK2021.FDB';
-//'127.0.0.1:3050/d:\Bazy\Dziennik2021\dziennik2021.fdb';
-//ibDtBs1.DatabaseName := 'c:\bazy\moja_baza.gdb';
-
-ibDtBs1.Params.Add('user_name=SYSDBA');
-ibDtBs1.Params.Add('password=masterkey');
-
-//ibDtbsNf1.Database.Params.Add('ibDtBs1');
-
-ibDtBs1.Open();
+ibDtBs1.DatabaseName := edtSciezka.Text; //'127.0.0.1/3050:D:\Bazy\Dziennik2021\DZIENNIK2021.FDB';
+ibDtBs1.Params.Add('user_name=' + edtUser.Text);
+ibDtBs1.Params.Add('password=' + edtPassword.Text);
+ibDtBs1.Open;
+//mmo1.Lines.Add(edtIP.Text +'/' + edtPort.Text +':' +edtSciezka.Text);
 end;
 
 procedure TFrmConnectionEditor.edtUserChange(Sender: TObject);
 begin
 //edtParametry.Text:= edtUser.Text + edtPassword.Text;
+end;
+
+procedure TFrmConnectionEditor.ibDtBs1AfterConnect(Sender: TObject);
+begin
+shp1.Brush.Color:=clLime;
 end;
 
 end.

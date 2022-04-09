@@ -237,6 +237,14 @@ object FrmMain: TFrmMain
       Height = 218
       TabOrder = 1
     end
+    object tv1: TTreeView
+      Left = 16
+      Top = 296
+      Width = 121
+      Height = 97
+      Indent = 19
+      TabOrder = 2
+    end
   end
   object rzPnlTop: TRzPanel
     Left = 0
@@ -247,7 +255,6 @@ object FrmMain: TFrmMain
     BorderInner = fsFlat
     BorderOuter = fsFlat
     TabOrder = 1
-    ExplicitTop = -4
   end
   object mm1: TMainMenu
     Left = 320
