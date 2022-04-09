@@ -79,6 +79,23 @@ object FrmConnectionEditor: TFrmConnectionEditor
       TabOrder = 4
       Text = 'D:\Bazy\Dziennik2021\dziennik2021.fdb'
     end
+    object edt1: TEdit
+      Left = 56
+      Top = 128
+      Width = 121
+      Height = 21
+      TabOrder = 5
+      Text = 'edt1'
+    end
+    object btn3: TButton
+      Left = 224
+      Top = 248
+      Width = 75
+      Height = 25
+      Caption = 'btn3'
+      TabOrder = 6
+      OnClick = btn3Click
+    end
   end
   object rzGrpBx2: TRzGroupBox
     Left = 8
@@ -129,28 +146,20 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Height = 13
       Caption = 'Dodatkowe parametry po'#322#261'czenia'
     end
-    object mmo1: TMemo
-      Left = 8
-      Top = 144
-      Width = 313
-      Height = 89
-      TabOrder = 0
-    end
     object edtUser: TEdit
       Left = 68
       Top = 25
       Width = 121
       Height = 21
-      TabOrder = 1
+      TabOrder = 0
       Text = 'SYSDBA'
-      OnChange = edtUserChange
     end
     object edtPassword: TEdit
       Left = 68
       Top = 52
       Width = 121
       Height = 21
-      TabOrder = 2
+      TabOrder = 1
       Text = 'masterkey'
     end
     object edtRole: TEdit
@@ -158,14 +167,14 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Top = 78
       Width = 121
       Height = 21
-      TabOrder = 3
+      TabOrder = 2
     end
     object cbbCharset: TComboBox
       Left = 264
       Top = 26
       Width = 105
       Height = 21
-      TabOrder = 4
+      TabOrder = 3
       Text = 'cbbCharset'
     end
     object cbbDialect: TComboBox
@@ -173,15 +182,22 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Top = 52
       Width = 105
       Height = 21
-      TabOrder = 5
+      TabOrder = 4
       Text = 'cbbDialect'
     end
     object tv1: TTreeView
-      Left = 232
-      Top = 104
-      Width = 121
+      Left = 16
+      Top = 102
+      Width = 345
       Height = 97
       Indent = 19
+      TabOrder = 5
+    end
+    object mmo1: TMemo
+      Left = 8
+      Top = 144
+      Width = 313
+      Height = 89
       TabOrder = 6
     end
   end
@@ -201,7 +217,6 @@ object FrmConnectionEditor: TFrmConnectionEditor
     Height = 25
     Caption = 'btn1'
     TabOrder = 3
-    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 208
@@ -210,7 +225,6 @@ object FrmConnectionEditor: TFrmConnectionEditor
     Height = 25
     Caption = 'btn2'
     TabOrder = 4
-    OnClick = btn2Click
   end
   object ibDtBs1: TIBDatabase
     DatabaseName = '@'
