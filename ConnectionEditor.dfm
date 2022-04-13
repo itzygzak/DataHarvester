@@ -141,7 +141,7 @@ object FrmConnectionEditor: TFrmConnectionEditor
     end
     object rzLbl6: TRzLabel
       Left = 8
-      Top = 125
+      Top = 105
       Width = 161
       Height = 13
       Caption = 'Dodatkowe parametry po'#322#261'czenia'
@@ -186,19 +186,12 @@ object FrmConnectionEditor: TFrmConnectionEditor
       Text = 'cbbDialect'
     end
     object tv1: TTreeView
-      Left = 16
-      Top = 102
+      Left = 8
+      Top = 124
       Width = 345
       Height = 97
       Indent = 19
       TabOrder = 5
-    end
-    object mmo1: TMemo
-      Left = 8
-      Top = 144
-      Width = 313
-      Height = 89
-      TabOrder = 6
     end
   end
   object btnConnect: TButton
@@ -209,22 +202,6 @@ object FrmConnectionEditor: TFrmConnectionEditor
     Caption = 'btnConnect'
     TabOrder = 2
     OnClick = btnConnectClick
-  end
-  object btn1: TButton
-    Left = 35
-    Top = 549
-    Width = 75
-    Height = 25
-    Caption = 'btn1'
-    TabOrder = 3
-  end
-  object btn2: TButton
-    Left = 208
-    Top = 549
-    Width = 121
-    Height = 25
-    Caption = 'btn2'
-    TabOrder = 4
   end
   object ibDtBs1: TIBDatabase
     DatabaseName = '@'

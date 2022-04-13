@@ -37,14 +37,11 @@ type
     ibDtBs1: TIBDatabase;
     btnConnect: TButton;
     ibDtbsNf1: TIBDatabaseInfo;
-    btn1: TButton;
     edtIP: TEdit;
     edtPort: TEdit;
     edtSciezka: TEdit;
-    btn2: TButton;
     tv1: TTreeView;
     shp1: TShape;
-    mmo1: TMemo;
     edt1: TEdit;
     btn3: TButton;
     procedure btnConnectClick(Sender: TObject);
@@ -75,7 +72,7 @@ begin
     begin
  //     if spelnionywarunekfiltru then
         begin
-          item := Tv1.items.add;
+         // item := Tv1.items.add;
           item.caption := bazy[i].nazwaBazy;
           item.subitems.add(bazy[i].parametryPolaczenia);
           item.SubItems.Add(bazy[i].userLogin);
@@ -100,7 +97,7 @@ ibDtBs1.Connected;
 ibDtBs1.DatabaseName := edtSciezka.Text; //'127.0.0.1/3050:D:\Bazy\Dziennik2021\DZIENNIK2021.FDB';
 ibDtBs1.Params.Add('user_name=' + edtUser.Text);
 ibDtBs1.Params.Add('password=' + edtPassword.Text);
-//ibDtBs1.Open;
+ibDtBs1.Open;
 
 Node := tv1.Items.Add(tv1.Selected, edtNazwaPol.Text);
 Node := tv1.Items.AddChild(tv1.Selected, edtSciezka.Text);// + edtUser.Text + edtPassword.Text);
